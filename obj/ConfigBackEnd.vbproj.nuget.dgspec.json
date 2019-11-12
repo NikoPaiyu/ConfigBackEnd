@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj": {}
+    "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj": {
+    "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj",
-        "projectName": "Config.CPQ.OpportunityInfo",
-        "projectPath": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj",
+        "projectUniqueName": "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj",
+        "projectName": "ConfigBackEnd",
+        "projectPath": "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj",
         "packagesPath": "C:\\Users\\ME20094296\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\obj\\",
+        "outputPath": "D:\\ConfigBackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ME20094296\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,12 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "dependencies": {
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.9.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -54,9 +48,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

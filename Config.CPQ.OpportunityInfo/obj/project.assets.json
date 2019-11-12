@@ -6171,11 +6171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TestFolder\\WebAPISamples\\wipro.hp\\wipro1.hp\\Config.CPQ.OpportunityInfo.csproj",
+      "projectUniqueName": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj",
       "projectName": "Config.CPQ.OpportunityInfo",
-      "projectPath": "D:\\TestFolder\\WebAPISamples\\wipro.hp\\wipro1.hp\\Config.CPQ.OpportunityInfo.csproj",
+      "projectPath": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\Config.CPQ.OpportunityInfo.csproj",
       "packagesPath": "C:\\Users\\ME20094296\\.nuget\\packages\\",
-      "outputPath": "D:\\TestFolder\\WebAPISamples\\wipro.hp\\wipro1.hp\\obj\\",
+      "outputPath": "C:\\Users\\ME20094296\\Desktop\\ConfigBackEnd\\Config.CPQ.OpportunityInfo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ME20094296\\AppData\\Roaming\\NuGet\\NuGet.Config",
