@@ -1,0 +1,20 @@
+﻿Database Creation: 
+	use QuoteSettingsDb
+
+Collection Creation:
+	db.createCollection('QuoteSetiings')
+
+Insert Query: 
+	db.QuoteSettings.insertOne({
+			"Deal Type" : "Standard",
+			"Country" : "Mexico",
+			"Currency" : "Mexican Peso",
+			"INCO Terms" : "Duty Paid"
+	})
+
+	db.QuoteSettings.insertOne({
+			"Deal Type" : "Standard",
+			"Country" : "India",
+			"Currency" : "Rupee",
+			"INCO Terms" : "Duty Paid"
+	})
