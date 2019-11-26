@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ConfigBackEnd\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {}
+    "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {}
   },
   "projects": {
-    "D:\\ConfigBackEnd\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {
+    "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ConfigBackEnd\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+        "projectUniqueName": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
         "projectName": "Confiq.Cpq.Line",
-        "projectPath": "D:\\ConfigBackEnd\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+        "projectPath": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
         "packagesPath": "C:\\Users\\CH20094267\\.nuget\\packages\\",
-        "outputPath": "D:\\ConfigBackEnd\\Confiq.Cpq.Line\\obj\\",
+        "outputPath": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CH20094267\\AppData\\Roaming\\NuGet\\NuGet.Config",

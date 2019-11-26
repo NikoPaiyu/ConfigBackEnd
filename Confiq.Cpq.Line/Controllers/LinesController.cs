@@ -1,6 +1,9 @@
 ﻿using Confiq.Cpq.Line.Models;
 using Confiq.Cpq.Line.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,96 +42,79 @@ namespace Confiq.Cpq.Line.Controllers
                 return line;
             }
 
-            [HttpPost]
-            public ActionResult<Lines> Create(Lines line)
+           [HttpPost]
+            [Route("{quoteNumber}/{prtid}")]
+            public ActionResult<Lines> Create(string quotenumber,string prtid)
             {
-                _lineService.Create(line);
+                return   _lineService.CreateLine(quotenumber,prtid);
             
-                return CreatedAtRoute("GetLine", new { id = line.Id.ToString() }, line);
+          
             }
+
+        //[HttpPost]
+        //[Route("{Id}")]
+        //public ActionResult<Lines> Update(Lines line)
+        //{
+            
+        //    _lineService.Update(line.Id, line);
+        //    return line;
+        //}
+
+        //[HttpPost]
+        //[Route("{Id}")]
+        //public Lines Update(string Id, Lines line)
+        //{
+
+        //    _lineService.Update(line.Id, line);
+        //    return line;
+        //}
 
         [HttpPost]
         [Route("{Id}")]
-        public ActionResult<Lines> Update(Lines line)
+        public string Update(string id,Lines Lines)
         {
-            // _lineService.Create(line);
-           // Console.WriteLine("Qty -->");
-            _lineService.Update(line.Id, line);
 
-            // return CreatedAtRoute("GetLine", new { id = line.Id.ToString() }, line);
-            return line;
+            var mongo = new MongoClient();
+
+            var db = mongo.GetDatabase("LineListDb");
+
+            var collection = db.GetCollection<Lines>("Line");
+
+
+          //  var filter = new BsonDocument("id", Lines.Id);
+
+          ////  var filter = Builders<BsonDocument>.Filter.Eq("Id", Lines.Id);
+
+          //  var document = collection.Find(filter).First();
+
+          //  var update = Builders<BsonDocument>.Update.Set("Quantity", Lines.Quantity);
+
+          //  var result=collection.UpdateOne(filter, update);
+
+
+
+            var filter = Builders<Lines>.Filter.Eq("Id", Lines.Id);
+            var update = Builders<Lines>.Update.Set("Quantity", Lines.Quantity);
+            collection.UpdateOne(filter, update);
+            return "Quantity" + Lines.Quantity;
+
+          
+
+        //    collection.FindOneAndReplace(Builders<Lines>.Filter.Eq("Id", Lines.Id), Builders<Lines>.Update.Set("Quantity", Lines.Quantity));
+
+        //    return "Quantity"+Lines.Quantity;
+
         }
 
-        //[HttpPut]
-        //[Route("{quoteNumber}/{partNumber}/{Quantity}/{restDisc}/{restType}")]
 
-        //public IActionResult Update(string quotenumber, string partnumber, int quantity, double restdisc, float resttype)
+
+        //public ActionResult<Lines> UpdateMany(Lines line)
         //{
-        //    var line = _lineService.Get(quotenumber, partnumber);
-
-        //    if (line == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    if (line.Quantity != quantity)
-        //    {
-        //        line.Quantity = quantity;
-        //        _lineService.Update(line.Id, line);
-        //    }
-        //    if (line.restDisc != restdisc)
-        //    {
-        //        line.restDisc = restdisc;
-        //        _lineService.Update(line.Id, line);
-        //    }
-        //    if (line.restType != resttype)
-        //    {
-        //        line.restType = resttype;
-        //        _lineService.Update(line.Id, line);
-        //    }
-        //        return NoContent();
+        //    var updmanyresult = await collection.UpdateManyAsync(
+        //Lines<BsonDocument>.Filter.Gt("MasterID", 100),
+        //                        Builders<BsonDocument>.Update.Inc("MasterID", 10))
         //}
 
-        //[HttpPut]
-        //[Route("{quoteNumber}/{partNumber}/{restDisc}")]
-
-        //public IActionResult Update(string quotenumber, string partnumber, double restdisc)
-        //{
-        //    var line = _lineService.Get(quotenumber, partnumber);
-
-        //    if (line == null)
-        //    {
-        //        return NotFound();
-        //    }
-           
-        //    if (line.restDisc != restdisc)
-        //    {
-        //        line.restDisc = restdisc;
-        //        _lineService.Update(line.Id, line);
-        //    }
-            
-        //    return NoContent();
-        //}
-
-
-        //[HttpPut]
-        //[Route("{quoteNumber}/{partNumber}/{restType}")]
-
-        //public IActionResult Update(string quotenumber, string partnumber, float resttype)
-        //{
-        //    var line = _lineService.Get(quotenumber, partnumber);
-
-        //    if (line == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if (line.restType != resttype)
-        //    {
-        //        line.restType = resttype;
-        //        _lineService.Update(line.Id, line);
-        //    }
-        //    return NoContent();
-        //}
 
         [HttpDelete]
         [Route("{Id}")]
