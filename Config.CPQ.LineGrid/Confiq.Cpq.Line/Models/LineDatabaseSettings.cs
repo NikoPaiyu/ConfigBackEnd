@@ -9,6 +9,7 @@ namespace Confiq.Cpq.Line.Models
     {
         public string LineCollectionName { get; set; }
         public string ProductCollectionName { get; set; }
+        public string HeadersCollectionName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }

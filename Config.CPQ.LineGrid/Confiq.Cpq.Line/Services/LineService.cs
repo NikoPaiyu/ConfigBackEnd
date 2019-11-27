@@ -1,6 +1,7 @@
 ﻿using Confiq.Cpq.Line.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Confiq.Cpq.Line.Services
     {
         private readonly IMongoCollection<Lines> _line;
         private readonly IMongoCollection<Products> _product;
+        private readonly IMongoCollection<Header> _head;
 
         public LineService(ILineDatabaseSettings settings)
         {
@@ -20,6 +22,7 @@ namespace Confiq.Cpq.Line.Services
 
             _line = database.GetCollection<Lines>(settings.LineCollectionName);
             _product = database.GetCollection<Products>(settings.ProductCollectionName);
+            _head = database.GetCollection<Header>(settings.HeadersCollectionName);
         }
 
         public Lines UpdateDisc(string id, Lines linein)
@@ -38,9 +41,24 @@ namespace Confiq.Cpq.Line.Services
             return linein;
         }
 
+        //extra code
+        public string SampleJSONSerilaize()
+        {
+            FinalClass output = new FinalClass();
+            output.colDef = _head.Find(line => true).FirstOrDefault();
+            output.rowDta = _line.Find(line => true).ToList();
+            string objjsonData = JsonConvert.SerializeObject(output);
+            return objjsonData;
+        }
+
+
+
+
+
         public List<Lines> Get() =>
             _line.Find(line => true).ToList();
-
+        public List<Header> Getheader() =>
+           _head.Find(line => true).ToList();
         public Lines Get(string id) =>
             _line.Find<Lines>(line => line.Id == id).FirstOrDefault();
 

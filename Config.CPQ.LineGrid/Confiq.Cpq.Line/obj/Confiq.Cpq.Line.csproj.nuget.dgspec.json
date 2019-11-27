@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {}
+    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {
+    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+        "projectUniqueName": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
         "projectName": "Confiq.Cpq.Line",
-        "projectPath": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
-        "packagesPath": "C:\\Users\\CH20094267\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CH20094267\\Desktop\\Confiq.Cpq.Line\\obj\\",
+        "projectPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+        "packagesPath": "C:\\Users\\KR20094263\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\CH20094267\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KR20094263\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +44,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.9.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

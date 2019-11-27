@@ -24,10 +24,15 @@ namespace Confiq.Cpq.Line.Controllers
 
             [HttpGet]
 
-            public ActionResult<List<Lines>> Get() =>
-                _lineService.Get();
+        //public ActionResult<List<Lines>> Get() =>
+        //    _lineService.Get();
+        //public ActionResult<List<Header>> Getheader() =>
+        //        _lineService.Getheader();
+        public string Getheader() =>
+            
+            _lineService.SampleJSONSerilaize();
 
-            [HttpGet]
+        [HttpGet]
             [Route("{Id}")]
 
         public ActionResult<Lines> Get(string id)
