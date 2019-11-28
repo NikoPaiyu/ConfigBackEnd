@@ -6207,23 +6207,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KR20094263\\.nuget\\packages\\": {},
+    "C:\\Users\\PRAGATHI.S.B\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+      "projectUniqueName": "C:\\Users\\PRAGATHI.S.B\\Desktop\\Config-master\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
       "projectName": "Confiq.Cpq.Line",
-      "projectPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
-      "packagesPath": "C:\\Users\\KR20094263\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\obj\\",
+      "projectPath": "C:\\Users\\PRAGATHI.S.B\\Desktop\\Config-master\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\Confiq.Cpq.Line.csproj",
+      "packagesPath": "C:\\Users\\PRAGATHI.S.B\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PRAGATHI.S.B\\Desktop\\Config-master\\ConfigBackEnd\\Config.CPQ.LineGrid\\Confiq.Cpq.Line\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\KR20094263\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PRAGATHI.S.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
