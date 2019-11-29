@@ -6166,19 +6166,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CH20094267\\.nuget\\packages\\": {}
+    "C:\\Users\\DI20094223\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CH20094267\\Desktop\\Config.CPQ.ConfigPage\\Config.CPQ.ConfigPage.csproj",
+      "projectUniqueName": "C:\\Users\\DI20094223\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd\\Config.CPQ.ConfigPage\\Config.CPQ.ConfigPage.csproj",
       "projectName": "Config.CPQ.ConfigPage",
-      "projectPath": "C:\\Users\\CH20094267\\Desktop\\Config.CPQ.ConfigPage\\Config.CPQ.ConfigPage.csproj",
-      "packagesPath": "C:\\Users\\CH20094267\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CH20094267\\Desktop\\Config.CPQ.ConfigPage\\obj\\",
+      "projectPath": "C:\\Users\\DI20094223\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd\\Config.CPQ.ConfigPage\\Config.CPQ.ConfigPage.csproj",
+      "packagesPath": "C:\\Users\\DI20094223\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DI20094223\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd\\Config.CPQ.ConfigPage\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CH20094267\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DI20094223\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
