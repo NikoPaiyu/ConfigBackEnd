@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd.vbproj": {}
+    "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd.vbproj": {
+    "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd.vbproj",
+        "projectUniqueName": "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj",
         "projectName": "ConfigBackEnd",
-        "projectPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\ConfigBackEnd.vbproj",
-        "packagesPath": "C:\\Users\\KR20094263\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\obj\\",
+        "projectPath": "D:\\ConfigBackEnd\\ConfigBackEnd.vbproj",
+        "packagesPath": "C:\\Users\\ME20094296\\.nuget\\packages\\",
+        "outputPath": "D:\\ConfigBackEnd\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\KR20094263\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ME20094296\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
