@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DI20094223\\Desktop\\project\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj": {}
+    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DI20094223\\Desktop\\project\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj": {
+    "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DI20094223\\Desktop\\project\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj",
+        "projectUniqueName": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj",
         "projectName": "Config.CPQ.configPage2",
-        "projectPath": "C:\\Users\\DI20094223\\Desktop\\project\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj",
-        "packagesPath": "C:\\Users\\DI20094223\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DI20094223\\Desktop\\project\\Config.CPQ.configPage2\\obj\\",
+        "projectPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.configPage2\\Config.CPQ.configPage2.csproj",
+        "packagesPath": "C:\\Users\\KR20094263\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KR20094263\\Documents\\GitHub\\ConfigBackEnd\\Config.CPQ.configPage2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DI20094223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KR20094263\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
