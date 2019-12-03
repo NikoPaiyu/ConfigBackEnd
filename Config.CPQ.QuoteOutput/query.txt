@@ -1,0 +1,14 @@
+﻿To create database
+	use QuoteOutputDb
+
+To createcollection
+	db.createCollection('DisplayOptions')
+
+Insert Query
+	db.DisplayOptions.insert([{'Quote Number':'PO0123123220-A1234',
+	"languages":[{"name":'English'},{"name":'Spanish'}],
+	"outType":[{"type":'Standard'},{"type":'Custom'}],
+	'Including Shipping and Freight Charges':false,
+	'Include Tax':false,'Hide Bundle Components':false, 
+	'Show Eclipse ID':false, 
+	'Show Master Deal ID':false}])

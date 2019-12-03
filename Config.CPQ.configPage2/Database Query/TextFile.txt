@@ -1,0 +1,278 @@
+﻿Create Database :
+use ConfigDb
+
+Create Collection Category :
+db.createCollection("Category")
+
+Insert into Category :
+db.Category.insert([{"categoryId":1, "name":"PC"},{"categoryId":2, "name":"Laptop"},{"categoryId":3, "name":"MobileWorkstation"},{"categoryId":4, "name":"PointOfSales"},{"categoryId":5, "name":"Workstation"}])
+
+
+Create Collection Series :
+db.createCollection('Series')
+
+Insert into Series :
+db.Series.insert([{'categoryId':1,'seriesId':101,'name':'Elite1'},{'categoryId':1,'seriesId':102,'name':'Elite2'},{'categoryId':2,'seriesId':201,'name':'Spectre1'},{'categoryId':2,'seriesId':202,'name':'Spectre2'},{'categoryId':3,'seriesId':301,'name':'Zbook1'},{'categoryId':3,'seriesId':302,'name':'Zbook2'},{'categoryId':4,'seriesId':401,'name':'EngageOne1'},{'categoryId':4,'seriesId':402,'name':'EngageOne2'},{'categoryId':5,'seriesId':501,'name':'Z1'},{'categoryId':5,'seriesId':502,'name':'Z2'}])
+
+
+Create Collection ConfigTabs :
+db.createCollection('ConfigTabs')
+
+Insert into ConfigTabs :
+db.ConfigTabs.insert({"seriesId":101,"config":"ConfigPc1","linetype": {
+            "hardware": {
+                "warrantyExtensionBuildings": [
+                    {
+                        "value": "None",
+                        "isSelected": true
+                    },
+                    {
+                        "value": "LOZ91AV-No Extend Warranty Sevice Bundle [Price:+SGD 0.05]",
+                        "isSelected": false
+                    }
+                ],
+                "outOfBandManageabilities": [
+                    {
+                        "value": "XPH47AV-No vPro AMT supported [Price:+SGD 0.05]",
+                        "isSelected": true
+                    }
+                ],
+                "dIBMiscs": [
+                    {
+                        "value": "VBL92AV-Enterprise-Ready IOPT Setting [Price:+SGD 0.05]",
+                        "isChecked": true
+                    },
+                    {
+                        "value": "Y4B63AV-SGX Permanent Disable IOPT [Price:+SGD 0.05]",
+                        "isChecked": true
+                    }
+                ],
+                "dIBHardwares": [
+                    {
+                        "value": "1EY88AV-DIB HP Nano Lock [Price:+ SGD 58.28]",
+                        "isChecked": false
+                    },
+                    {
+                        "value": "2GZ24AV-DIB HP USB-C Mini Dock [Price:+ SGD 129.07]",
+                        "isChecked": false
+                    },
+                    {
+                        "value": "TOH17AV-DIB HP USB-C to USB 3.0 Adapter [Price:+ SGD 20.03]",
+                        "isChecked": false
+                    }
+                ],
+                "countryHardwareKit": [
+                    {
+                        "value": "Y6K62AV-Country Localisation [Price: SGD 0.03]",
+                        "isSelected": true
+                    }
+                ],
+                "kmatProductID": "859405-919",
+                "startingPointConfigID": "30614000"
+            },
+            "accessories": [
+                {
+                    "recommended": "Recommended",
+                    "partNumber": "1AA8184",
+                    "description": "HPZ32",
+                    "isChecked": true
+                },
+                {
+                    "recommended":"Recommended",
+                    "partNumber": "1FH51AA",
+                    "description": "HPZ35",
+                    "isChecked": false
+                }
+            ],
+            "carePacks": [
+                {
+                    "partNumber": "UB3G4E",
+                    "description": "HP 1 Year Onsite Hardware Support Without Battery Rplacement NoteBook",
+                    "isChecked": true,
+                    "isRecommended": true
+                },
+                {
+                    "partNumber": "UB0E9E",
+                    "description": "HP 5 Year Next Bussiness day Onsite Hardware Support Without DMR For HP NoteBooks",
+                    "isChecked": false,
+                    "isRecommended": true
+                }
+            ],
+            "configurationServices": [
+                {
+                    "customers": [
+                        {
+                            "value": "None",
+                            "isSelected": true
+                        },
+                        {
+                            "value": "VinciEnergies-EMEA",
+                            "isSelected": false
+                        },
+                        {
+                            "value": "Uniliver-EMEA",
+                            "isSelected": false
+                        },
+                        {
+                            "value": "Colorado Spring Utilitiesa",
+                            "isSelected": false
+                        }
+                    ]
+                }
+            ],
+            "deploymentServices": {
+                "logisticServiceBasicDeliveryAAs": [
+                    {
+                        "value": "None",
+                        "isSelected": true
+                    },
+                    {
+                        "value": "K7V77AA-USG Warehouse and Distribution service",
+                        "isSelected": false
+                    }
+                ],
+                "installationServicesAAs": [
+                    {
+                        "value": "K7VB1AA-USG Asset Management",
+                        "isSelected": true
+                    },
+                    {
+                        "value": "K7VB2AA-USG Imaging Services",
+                        "isSelected": true
+                    }
+                ]
+            },
+            "BOM":{
+               "RecommendedPartsFromFramework":["2PD83AV","X9H78AV","Y5Z40AV#AB4","1AZ73AV"]
+            }
+        }
+    })
+
+Insert into ConfigTabs :
+db.ConfigTabs.insert({"seriesId":101,"config":"ConfigPc2","linetype": {
+            "hardware": {
+                "warrantyExtensionBuildings": [
+                    {
+                        "value": "None",
+                        "isSelected": true
+                    }
+                ],
+                "outOfBandManageabilities": [
+                    {
+                        "value": "XPH47AV-No vPro AMT supported [Price:+SGD 0.05]",
+                        "isSelected": true
+                    }
+                ],
+                "dIBMiscs": [
+                    {
+                        "value": "Y4B63AV-SGX Permanent Disable IOPT [Price:+SGD 0.05]",
+                        "isChecked": true
+                    }
+                ],
+                "dIBHardwares": [
+                    {
+                        "value": "2GZ24AV-DIB HP USB-C Mini Dock [Price:+ SGD 129.07]",
+                        "isChecked": false
+                    },
+                    {
+                        "value": "TOH17AV-DIB HP USB-C to USB 3.0 Adapter [Price:+ SGD 20.03]",
+                        "isChecked": false
+                    }
+                ],
+                "countryHardwareKit": [
+                    {
+                        "value": "Y6K62AV-Country Localisation [Price: SGD 0.03]",
+                        "isSelected": true
+                    }
+                ],
+                "kmatProductID": "859405-919",
+                "startingPointConfigID": "30614000"
+            },
+            "accessories": [
+                {
+                    "recommended": "Recommended",
+                    "partNumber": "1FH51AA",
+                    "description": "HPZ35",
+                    "isChecked": false
+                }
+            ],
+            "carePacks": [
+                {
+                    "partNumber": "UB0E9E",
+                    "description": "HP 5 Year Next Bussiness day Onsite Hardware Support Without DMR For HP NoteBooks",
+                    "isChecked": false,
+                    "isRecommended": true
+                }
+            ],
+            "configurationServices": [
+                {
+                    "customers": [
+                        {
+                            "value": "Uniliver-EMEA",
+                            "isSelected": false
+                        },
+                        {
+                            "value": "Colorado Spring Utilitiesa",
+                            "isSelected": false
+                        }
+                    ]
+                }
+            ],
+            "deploymentServices": {
+                "logisticServiceBasicDeliveryAAs": [
+                    {
+                        "value": "K7V77AA-USG Warehouse and Distribution service",
+                        "isSelected": false
+                    }
+                ],
+                "installationServicesAAs": [
+                    {
+                        "value": "K7VB2AA-USG Imaging Services",
+                        "isSelected": true
+                    }
+                ]
+            },
+           "BOM":{
+               "RecommendedPartsFromFramework":["Y5E37AV","Y5E29AV","1JH99AV","Y6K67AV#AB4"]
+            }
+        }
+    })
+
+
+Create Collection Products :
+db.createCollection('Products')
+
+Insert into Products :
+db.Products.insert([{"partNumber":"XPH47AV","Description":"No vPro AMT supported","listPrice":1200},
+{"partNumber":"Y4B63AV","Description":"SGX Permanent Disable IOPT","listPrice":1200},
+{"partNumber":"2GZ24AV","Description":"DIB HP USB-C Mini Dock","listPrice":1200},
+{"partNumber":"TOH17AV","Description":"DIB HP USB-C to USB 3.0 Adapter","listPrice":1200} ,
+{"partNumber":"Y6K62AV","Description":"Country Localisation","listPrice":1200},
+{"partNumber":"1FH51AA","Description":"HPZ35","listPrice":1250},                             
+{"partNumber":"UB0E9E","Description":"HP 5 Year Next Bussiness day Onsite Hardware Support Without DMR For HP NoteBooks","listPrice":1250},
+{"partNumber":"K7V77AA","Description":"USG Warehouse and Distribution service","listPrice":1250},
+{"partNumber":"K7VB2AA","Description":"USG Imaging Services","listPrice":1250}, 
+{"partNumber":"LOZ91AV","Description":"No Extend Warranty Sevice Bundle","listPrice":1250}, 
+{"partNumber":"VBL92AV","Description":"Enterprise-Ready IOPT Setting","listPrice":1250}, 
+{"partNumber":"1EY88AV","Description":"DIB HP Nano Lock","listPrice":1250}, 
+{"partNumber":"K7VB1AA","Description":"USG Asset Management","listPrice":1250}, 
+{"partNumber":"UB3G4E","Description":"HP 1 Year Onsite Hardware Support Without Battery Rplacement NoteBook","listPrice":1250}]) 
+
+Create Collection PartList :
+db.createCollection('PartList')
+
+Insert into PartList :
+db.PartList.insert([{'partNumber':'XPH47AV','Description':'No vPro AMT supported','listPrice':1200,'quantity':1}])
+
+Create Collection ModelConfig :
+db.createCollection('ModelConfig')
+
+Insert into ModelConfig :
+db.ModelConfig.insert({"ConfigId" : "ab21",
+        "ConfigName" : "abc9",
+        "CreatedByEmail" : "abcd9@email.com",
+        "CustomerId" : "xyz21",
+        "Status" : "active",
+        "Category" : "MobileWorkstation",
+        "Series" : "Zbook1"
+})

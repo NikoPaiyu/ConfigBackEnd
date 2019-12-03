@@ -1,0 +1,155 @@
+﻿To create a database
+	use ConfigPageDb
+
+To create collection
+	db.createCollection("ModelConfig")
+
+To insert documents into the collection
+	db.ModelConfig.insert([
+		{
+			"ConfigId" : "ab12",
+			"ConfigName" : "abc",
+			"CreatedByEmail" : "abcd@email.com",
+			"CustomerId" : "xyz12",
+			"Status" : "active",
+			"Category" : "PC",
+			"Series" : "Elite1"
+		},
+		{
+				"configId" : "ab13",
+				"ConfigName" : "abc1",
+				"CreatedByEmail" : "abcd1@email.com",
+				"CustomerId" : "xyz13",
+				"Status" : "active",
+				"Category" : "PC",
+				"Series" : "Elite2"
+		},
+		{
+				"ConfigId" : "ab14",
+				"ConfigName" : "abc2",
+				"CreatedByEmail" : "abcd2@email.com",
+				"CustomerId" : "xyz14",
+				"Status" : "active",
+				"Category" : "PC",
+				"Series" : "Elite3"
+		},
+		{
+				"ConfigId" : "ab15",
+				"ConfigName" : "abc3",
+				"CreatedByEmail" : "abcd3@email.com",
+				"CustomerId" : "xyz15",
+				"Status" : "active",
+				"Category" : "PC",
+				"Series" : "Elite4"
+		},
+		{
+				"ConfigId" : "ab16",
+				"ConfigName" : "abc4",
+				"CreatedByEmail" : "abcd4@email.com",
+				"CustomerId" : "xyz16",
+				"Status" : "active",
+				"Category" : "Laptop",
+				"Series" : "Spectre1"
+		},
+		{
+				"ConfigId" : "ab17",
+				"ConfigName" : "abc5",
+				"CreatedByEmail" : "abcd5@email.com",
+				"CustomerId" : "xyz17",
+				"Status" : "active",
+				"Category" : "Laptop",
+				"Series" : "Spectre2"
+		},
+		{
+				"ConfigId" : "ab18",
+				"ConfigName" : "abc6",
+				"CreatedByEmail" : "abcd6@email.com",
+				"CustomerId" : "xyz18",
+				"Status" : "active",
+				"Category" : "Laptop",
+				"Series" : "Spectre3"
+		},
+		{
+				"ConfigId" : "ab19",
+				"ConfigName" : "abc7",
+				"CreatedByEmail" : "abcd7@email.com",
+				"CustomerId" : "xyz20",
+				"Status" : "active",
+				"Category" : "MobileWorkstation",
+				"Series" : "Zbook1"
+		},
+		{
+				"ConfigId" : "ab20",
+				"ConfigName" : "abc8",
+				"CreatedByEmail" : "abcd8@email.com",
+				"CustomerId" : "xyz21",
+				"Status" : "active",
+				"Category" : "MobileWorkstation",
+				"Series" : "Zbook2"
+		},
+		{
+				"ConfigId" : "ab21",
+				"ConfigName" : "abc9",
+				"CreatedByEmail" : "abcd9@email.com",
+				"CustomerId" : "xyz22",
+				"Status" : "active",
+				"Category" : "MobileWorkstation",
+				"Series" : "Zbook3"
+		},
+		{
+				"ConfigId" : "ab23",
+				"ConfigName" : "abc10",
+				"CreatedByEmail" : "abcd10@email.com",
+				"CustomerId" : "xyz23",
+				"Status" : "active",
+				"Category" : "PointOfSales",
+				"Series" : "EngageOne1"
+		},
+		{
+				"ConfigId" : "ab24",
+				"ConfigName" : "abc11",
+				"CreatedByEmail" : "abcd11@email.com",
+				"CustomerId" : "xyz24",
+				"Status" : "active",
+				"Category" : "PointOfSales",
+				"Series" : "EngageOne2"
+		},
+		{
+				"ConfigId" : "ab25",
+				"ConfigName" : "abc12",
+				"CreatedByEmail" : "abcd12@email.com",
+				"CustomerId" : "xyz25",
+				"Status" : "active",
+				"Category" : "PointOfSales",
+				"Series" : "EngageOne3"
+		},
+		{
+				"ConfigId" : "ab26",
+				"ConfigName" : "abc13",
+				"CreatedByEmail" : "abcd13@email.com",
+				"CustomerId" : "xyz26",
+				"Status" : "active",
+				"Category" : "Workstation",
+				"Series" : "Z1"
+		},
+		{
+				"ConfigId" : "ab27",
+				"ConfigName" : "abc14",
+				"CreatedByEmail" : "abcd14@email.com",
+				"CustomerId" : "xyz27",
+				"Status" : "active",
+				"Category" : "Workstation",
+				"Series" : "Z2"
+		},
+		{
+				"ConfigId" : "ab28",
+				"ConfigName" : "abc15",
+				"CreatedByEmail" : "abcd15@email.com",
+				"CustomerId" : "xyz28",
+				"Status" : "active",
+				"Category" : "Workstation",
+				"Series" : "Z3"
+		}])
+
+To view the documents inside the collection
+	db.ModelConfig.find().pretty()

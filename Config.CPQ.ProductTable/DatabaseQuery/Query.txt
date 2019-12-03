@@ -1,0 +1,45 @@
+﻿Database Name: 
+              use ProductTableDb
+
+Collection Creation:
+              db.createCollection('ProductTable')
+
+Insert Query:
+             db.ProductTable.insertMany(
+                [{"ProductNumber":"B3909DB",
+                   "ProductID":"B3909DB",
+                   "UnitListAmount":"1900.0",
+                   "ProductLine":"23",
+                   "ProductDescription":"HP Fortran LTU For Servers",
+                   "LineType":"Product",
+                   "SRT":"5Days",
+                   "avail":"878342400000",
+                   "disco":1507075200000,
+                   "obsolete":1509753600000,
+                   "eol":"1504483200000"}]
+
+                [{"ProductNumber":"B3909DC",
+                   "ProductID":"B3909DC",
+                   "UnitListAmount":"17900.0",
+                   "ProductLine":"24",
+                   "ProductDescription":"HP Fortran LTU For Printers",
+                   "LineType":"Product",
+                   "SRT":"5Days",
+                   "avail":"878342400000",
+                   "disco":1507075200000,
+                   "obsolete":1509753600000,
+                   "eol":"1504483200000"}]
+
+
+                [{"ProductNumber":"B3909DD",
+                   "ProductID":"B3909DD",
+                   "UnitListAmount":"7900.0",
+                   "ProductLine":"25",
+                   "ProductDescription":"HP Fortran LTU For Desktops",
+                   "LineType":"Product",
+                   "SRT":"7Days",
+                   "avail":"878342400000",
+                   "disco":1507075200000,
+                   "obsolete":1509753600000,
+                   "eol":"1504483200000"}]
+)
