@@ -39,42 +39,6 @@ namespace Config.CPQ.Pricing.Controllers
             return pricing;
         }
 
-        [HttpPost]
-        public ActionResult<Models.Pricing> Create(Models.Pricing pricing)
-        {
-            _pricingServices.Create(pricing);
-
-            return CreatedAtRoute("GetPricing", new { id = pricing.Id.ToString() }, pricing);
-        }
-
-        [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, Models.Pricing pricingIn)
-        {
-            var pricing= _pricingServices.Get(id);
-
-            if (pricing == null)
-            {
-                return NotFound();
-            }
-
-            _pricingServices.Update(id, pricingIn);
-
-            return NoContent();
-        }
-
-        [HttpDelete("{id:length(24)}")]
-        public IActionResult Delete(string id)
-        {
-            var pricing = _pricingServices.Get(id);
-
-            if (pricing == null)
-            {
-                return NotFound();
-            }
-
-            _pricingServices.Remove(pricing.Id);
-
-            return NoContent();
-        }
+       
     }
 }
